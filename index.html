@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogota vía a la diversión </title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="header-container">
+            <!-- LOGO + NOMBRE -->
+            <div class="logo-titulo">
+                <a href="#inicio" class="brand" aria-label="Inicio">
+                    <img src="assets/logo.png" alt="Logo Bogotá vía a la diversión" class="brand-logo" />
+                </a>
+
+            </div>
+
+
+            <!-- Si prefieres texto al lado del logo, lo mantienes; si no, bórralo -->
+            <div class="brand-text">
+                <span class="site-title">Bogotá</span>
+                <span class="site-subtitle">vía a la diversión</span>
+            </div>
+        </div>
+
+        <!-- MENÚ PRINCIPAL -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li class="submenu">
+                    <a href="#">Portafolio ▼</a>
+                    <ul class="submenu-items">
+                        <li><a href="#horario">Recorrido</a></li>
+                
+                        
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#">Información ▼</a>
+                    <ul class="submenu-items">
+                        <li><a href="#pasaportes">Misión</a></li>
+                        <li><a href="#pasaportes">Visión</a></li>
+                        <li><a href="#pasaportes">Valores</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#">Contacto ▼</a>
+                    <ul class="submenu-items">
+                        <li><a href="#pqrsf">PQRSF</a></li>
+                        <li><a href="#encuesta">Encuesta</a></li>
+                        <li><a href="#form-reserva">Reservaciones</a></li>
+                    </ul>
+                </li>
+
+                <!-- CARRITO -->
+                <li class="carrito">
+                    <a href="#" id="carrito-btn" title="Ver carrito">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+       <!-- PANEL LATERAL DEL CARRITO  -->
+<div id="carrito-panel" class="carrito-panel">
+  <div class="carrito-header">
+    <h3>🛍️ Tu carrito</h3>
+    <button id="cerrar-carrito" class="btn-cerrar">✖</button>
+  </div>
+
+  <div class="carrito-contenido">
+    <ul id="carrito-lista"></ul>
+    <p id="total" class="total">Total: $0</p>
+  </div>
+
+  <div class="carrito-footer">
+    <button id="vaciar-carrito" class="btn-vaciar">🗑️ Vaciar carrito</button>
+    <button id="finalizar-reserva">Finalizar Reserva</button> 
+</div>
+</div>
+
+
+
+        
+        
+
+    </header>
+
+
+
+
+
+    <!-- Sección principal -->
+
+
+    <section id="inicio" class="hero">
+
+        <h1 class="titulo-principal">
+             <span class="resaltado">Bogotá</span> vía a la <span class="diversion">diversión</span>
+        </h1>
+
+
+        <p> Somos una agencia de viajes dedicada a ofrecer experiencias inolvidables en Bogotá, la vibrante capital de
+            Colombia. Nuestro objetivo es brindarte un recorrido lleno de diversión, cultura y aventura, permitiéndote
+            descubrir los encantos de esta maravillosa ciudad.
+        </p>
+
+        <img src="assets/logo.png" alt="Imagen principal de Bogotá vía a la diversión" class="hero-image" />
+    </section>
+
+
+  <!-- Sección de pasaportes -->
+    <section id="pasaportes" class="precios">
+        <h2>Mision- Vision </h2>
+        <div class="grid-precios">
+            <div class="plan flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Mision</h3>
+                        <p></p>
+                        <button>Voltear</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h5>Nuestro objetivo es dar a conocer la maravillosa ciudad de Bogotá por medio de un recorrido mostrando sus lugares mas preciosos, representativos junto a sus histoias logrando así sacar a todo el público en general de su zona de confort </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="plan destacado flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Vision</h3>
+                        <p></p>
+                        <button>Voltear</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h5>   Para el año 2030 Bogotá vía a la diversión será reconocida por inspirar a las personas a descubrir Bogotá con nuevos ojos. Que cada recorrido sea una experiencia que saque a la gente de su zona de confort, que los conecte con la historia, la cultura y la esencia viva de nuestra ciudad. </h5>
+                        <p>
+                        <h4></h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" plan flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Valores</h3>
+                        <p></p>
+                        <button>Voltear</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h6>Nuestros principios y valores:
+
+                            Honestidad: sinceridad y fortalecimiento de las relaciones interpersonales
+                            Lealtad: Actuar con seguridad y fortalecer las relaciones en el trabajo
+                            Calidad: Siendo eficientes, ágiles y un excelente servicio
+                            Trabajo en equipo: Activos, entusiastas, compañeritas y una buena comunicación
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <script>
+        // Efecto flip para las tarjetas de pasaportes
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('flipped');
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Sección de planes turisticos -->
+    <section id="horario" class="horario">
+        <h2>Recorrido</h2>
+        <p> El encuentro de los reccorridos sera en la entrada principal del hotel tequendama a las 6:00 am, por favor
+            llegar 15 minutos antes para asi poder iniciar el recorrido a la hora establecida.
+
+        </section>
+
+        </p>
+        <div class="grid-horario">
+            <div class="card card--miercoles">
+                <h3>🎢 Primer dia</h3>
+                <p>Nos dirigiremos al hotel tequendama donde dejaremos las maletas y tomaremos un desayuno. Luego nos
+                    dirigiremos al museo del oro donde aprenderemos mas de nuestra cultura.
+                    una vez finalizado el recorrido nos dirigiremos al hotel para almorar y descansar.
+                </p>
+                <div class="horario-info">
+                    <p></p>
+                </div>
+            </div>
+            <div class="card card--viernes">
+                <!-- Imagen eliminada: viernes -->
+                <h3>🎡 Segundo dia </h3>
+                <p></p>
+                <div class="horario-info">
+                    <p>
+
+                        En nuestro segundo día, comenzaremos la jornada muy temprano con un delicioso desayuno para
+                        empezar el día con energía.
+
+                        Después del desayuno, nos dirigiremos hacia uno de los lugares más emblemáticos de la ciudad:
+                        Monserrate, el cerro más alto y visitado de Bogotá.
+                        Subiremos en teleférico, disfrutando de una vista panorámica impresionante. En la cima, los
+                        turistas podrán visitar el Santuario del Señor Caído, comprar recuerdos típicos en las tiendas
+                        de artesanías y tomar muchas fotos de la ciudad desde las alturas.
+
+                        Después de la bajada de Monserrate, iremos a un restaurante, donde disfrutaremos de:
+
+                        Entrada: Caldo de costilla
+
+                        Plato fuerte: Bandeja bogotana (arroz, carne asada, chicharrón, papa criolla, ensalada)
+
+                        Bebida: Jugo natural o limonada.
+
+                        Para cerrar el día, regresaremos al hotel y disfrutaremos una cena ligera y reconfortante en el
+                        restaurante del Tequendama.
+                    </p>
+                </div>
+            </div>
+            <div class="card card--domingo">
+                <!-- Imagen eliminada: domingo -->
+                <h3>🎠 Tercer dia </h3>
+                <p>salitre magico.
+
+                    Una vez desayunados en el hotel sacamos el equipaje y lo dejamos en el transporte para asi poder dar
+                    entrega de la habitacion . nos dirigiremos a salitre magico para disfrutar de las atracciones que
+                    este ofrece.
+                    En el parque contaremos con la entrada mitro plus para que disfruten al maximo las atracciones, como
+                    medida de seguidad se fijara un punto de encuentro el cual es al frente de las zonas de comida.
+                    El almuerzo sera dentro del parrque y la salida sera a las 4 pm dando fin a nuestro recorrido.
+                </p>
+                <div class="horario-info">
+                    <p></p>
+                </div>
+            </div>
+        <button class="btn-reservar" data-plan="Recorrido">Reservar</button>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ---------------------------
+         SECCIONES AÑADIDAS (NO BORRAN NADA)
+         Encuesta de satisfacción, PQRSF y Formulario de Reserva
+         --------------------------- -->
+
+    <!-- NUEVA SECCIÓN: ENCUESTA DE SATISFACCIÓN -->
+    <section id="encuesta" class="horario">
+        <h2>📝 Encuesta de Satisfacción</h2>
+        <p>Tu opinión es muy importante para ayudarnos a mejorar nuestros servicios.</p>
+        <form class="formulario" id="form-encuesta">
+            <label>1️⃣ ¿Cómo calificarías tu experiencia general?</label><br>
+            <select name="calificacion" required>
+                <option value="">Selecciona una opción</option>
+                <option>Excelente</option>
+                <option>Buena</option>
+                <option>Regular</option>
+                <option>Mala</option>
+            </select><br><br>
+
+            <label>2️ ¿El guía turístico fue amable y profesional?</label><br>
+            <input type="radio" name="guia" value="sí" id="guia-si"> <label for="guia-si">Sí</label>
+            <input type="radio" name="guia" value="no" id="guia-no"> <label for="guia-no">No</label><br><br>
+
+            <label>3️ ¿Qué parte del recorrido disfrutaste más?</label><br>
+            <input type="text" name="parte" placeholder="Tu respuesta"><br><br>
+
+            <label>4️ Comentarios adicionales:</label><br>
+            <textarea name="comentarios" rows="4" cols="40"
+                placeholder="Escribe tus sugerencias aquí..."></textarea><br><br>
+
+            <button type="submit" class="boton">Enviar Encuesta</button>
+            <div class="mensaje encuesta-mensaje" style="display:none;"></div>
+        </form>
+    </section>
+
+    <!-- NUEVA SECCIÓN: PETICIONES, QUEJAS, RECLAMOS, SUGERENCIAS Y FELICITACIONES -->
+    <section id="pqrsf" class="precios">
+        <h2>📬 Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones</h2>
+        <p>Ayúdanos a mejorar dejando tus comentarios, solicitudes o felicitaciones. Te responderemos lo más pronto
+            posible.</p>
+        <form class="formulario" id="form-pqrsf">
+            <label>Nombre:</label><br>
+            <input type="text" name="nombre" required placeholder="Tu nombre completo"><br><br>
+
+            <label>Correo electrónico:</label><br>
+            <input type="email" name="email" required placeholder="tucorreo@ejemplo.com"><br><br>
+
+            <label>Tipo de mensaje:</label><br>
+            <select name="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Petición</option>
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+                <option>Felicitación</option>
+            </select><br><br>
+
+            <label>Mensaje:</label><br>
+            <textarea name="mensaje" rows="5" cols="50" placeholder="Escribe aquí tu mensaje..."
+                required></textarea><br><br>
+
+            <button type="submit" class="boton">Enviar PQRSF</button>
+            <div class="mensaje pqrsf-mensaje" style="display:none;"></div>
+        </form>
+    </section>
+
+    <!-- NUEVA SECCIÓN: FORMULARIO DE RESERVA -->
+    <section id="form-reserva" class="reserva">
+        <h2>Formulario de Reserva</h2>
+        <form action="#" method="post" class="formulario" id="form-reserva-interno">
+            <label for="res-nombre">Nombre completo:</label>
+            <input type="text" id="res-nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+
+            <label for="res-email">Correo electrónico:</label>
+            <input type="email" id="res-email" name="email" placeholder="ejemplo@correo.com" required>
+
+            <div class="form-group">
+      <label for="plan">Plan turístico seleccionado:</label>
+      <input type="text" id="plan" name="plan" readonly placeholder="Selecciona un plan desde el carrito">
+    </div>
+
+            <label for="res-fecha">Fecha de visita:</label>
+            <input type="date" id="res-fecha" name="fecha" required>
+
+            <label for="res-personas">Número de personas:</label>
+            <input type="number" id="res-personas" name="personas" min="1" required>
+
+            <label for="res-mensaje">Mensaje adicional:</label>
+            <textarea id="res-mensaje" name="mensaje" rows="4"
+                placeholder="Escribe aquí tus observaciones..."></textarea>
+
+            <button type="submit" class="boton">Enviar reserva</button>
+            <div class="mensaje reserva-mensaje" style="display:none;"></div>
+        </form>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <section class="footer-section">
+                <h3 class="footer-title">🔒 Seguridad</h3>
+                <p>Tener en cuenta los puntps de encuentro</p>
+
+            </section>
+
+            <section class="footer-section">
+                <h3 class="footer-title">💡 Tips para tu visita</h3>
+                <ul>
+                    <li>Si eres menor de edad debes tener tu documento de identidad a la mano para poder ingresar a las
+                        atracciones.</li>
+                    <li>Menores de 14 años deben permanecer acompañados de un adulto responsable.</li>
+                    <li>Si te sientes perdido siempre pregunta al guia .</li>
+
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3 class="footer-title">🚫 Normas</h3>
+                <p>Evitar separarce del gupo en todo moemento</p>
+                <p>No entrar comida al parque (salitre)</p>
+                <p>No llevarse nada del hotel</p>
+                <p>Dejar limpio los lugares que se visiten</p>
+            </section>
+
+
+
+            <hr class="footer-divider">
+
+            <p class="footer-copy">&copy; 2025 Lizeth Rubio</p>
+
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
